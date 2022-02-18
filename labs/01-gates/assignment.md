@@ -4,7 +4,7 @@
 
 1. Equations of all three versions of logic function f(c,b,a):
 
-   ![image](https://user-images.githubusercontent.com/99768688/154719079-8eab65e7-33e4-47ae-825b-46c33ff100f2.png)
+   ![image](https://user-images.githubusercontent.com/99768688/154735260-64d2f83c-1ac4-47ca-b0b2-a8b6772ee695.png)
    
 
 2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
