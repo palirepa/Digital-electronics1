@@ -1,4 +1,4 @@
-# Lab 2: YOUR_FIRSTNAME LASTNAME
+# Lab 2: PAVOL REPA
 
 ### 2-bit comparator
 
