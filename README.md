@@ -1,2 +1,3 @@
 # Digital Electronics 1
-Digitalna elektronika 1
+#### Predmet, ktorý študujem na VUT.
+
