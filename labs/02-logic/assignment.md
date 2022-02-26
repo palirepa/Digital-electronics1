@@ -25,7 +25,8 @@
 
    Greater than:
 
-   ![K-maps](images/kmap_empty.png)
+   ![image](https://user-images.githubusercontent.com/99768688/155853084-e6c6a328-9060-46f9-b629-2fae8bdc0fec.png)
+
 
    Less than:
 
