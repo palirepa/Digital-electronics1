@@ -1,2 +1,2 @@
-# digital-electronics-1
+# Digital Electronics 1
 Digitalna elektronika 1
