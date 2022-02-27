@@ -1,24 +1,5 @@
 # Lab 2: PAVOL REPA
 
- | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
-   | :-: | :-: | :-: | :-: | :-: | :-: |
-   |  0 | 0 0 | 0 0 | 0 | 1 | 0 |
-   |  1 | 0 0 | 0 1 | 0 | 0 | 1 |
-   |  2 | 0 0 | 1 0 | 0 | 0 | 1 |
-   |  3 | 0 0 | 1 1 | 0 | 0 | 1 |
-   |  4 | 0 1 | 0 0 | 1 | 0 | 0 |
-   |  5 | 0 1 | 0 1 | 0 | 1 | 0 |
-   |  6 | 0 1 | 1 0 | 0 | 0 | 1 |
-   |  7 | 0 1 | 1 1 | 0 | 0 | 1 |
-   |  8 | 1 0 | 0 0 | 1 | 0 | 0 |
-   |  9 | 1 0 | 0 1 | 1 | 0 | 0 |
-   | 10 | 1 0 | 1 0 | 0 | 1 | 0 |
-   | 11 | 1 0 | 1 1 | 0 | 0 | 1 |
-   | 12 | 1 1 | 0 0 | 1 | 0 | 0 |
-   | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
-   | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
-   | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-
 ### 2-bit comparator
 
 1. Karnaugh maps for other two functions:
@@ -48,15 +29,15 @@
         report "Stimulus process started" severity note;
 
         -- First test case
-        s_b <= "BCD_OF_YOUR_SECOND_LAST_ID_DIGIT"; -- Such as "0101" if ID = xxxx56
-        s_a <= "BCD_OF_YOUR_LAST_ID_DIGIT";        -- Such as "0110" if ID = xxxx56
+        s_b <= "00"; -- Such as "0101" if ID = xxxx56
+        s_a <= "00";        -- Such as "0110" if ID = xxxx56
         wait for 100 ns;
         -- Expected output
-        assert ((s_B_greater_A = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_equals_A  = 'WRITE_CORRECT_VALUE_HERE') and
-                (s_B_less_A    = 'WRITE_CORRECT_VALUE_HERE'))
+        assert ((s_B_greater_A = '0') and
+                (s_B_equals_A  = '1') and
+                (s_B_less_A    = '0'))
         -- If false, then report an error
-        report "Input combination COMPLETE_THIS_TEXT FAILED" severity error;
+        report "Input combination 00, 00 FAILED" severity error;
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
