@@ -1,31 +1,12 @@
 # Lab 2: PAVOL REPA
 
-| **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
-   | :-: | :-: | :-: | :-: | :-: | :-: |
-   |  0 | 0 0 | 0 0 | 0 | 1 | 0 |
-   |  1 | 0 0 | 0 1 | 0 | 0 | 1 |
-   |  2 | 0 0 | 1 0 | 0 | 0 | 1 |
-   |  3 | 0 0 | 1 1 | 0 | 0 | 1 |
-   |  4 | 0 1 | 0 0 | + | 0 | 0 |
-   |  5 | 0 1 | 0 1 | 0 | 1 | 0 |
-   |  6 | 0 1 | 1 0 | 0 | 0 | 1 |
-   |  7 | 0 1 | 1 1 | 0 | 0 | 1 |
-   |  8 | 1 0 | 0 0 | 1 | 0 | 0 |
-   |  9 | 1 0 | 0 1 | 1 | 0 | 0 |
-   | 10 | 1 0 | 1 0 | 0 | 1 | 0 |
-   | 11 | 1 0 | 1 1 | 0 | 0 | 1 |
-   | 12 | 1 1 | 0 0 | 1 | 0 | 0 |
-   | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
-   | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
-   | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-   
 ### 2-bit comparator
 
 1. Karnaugh maps for other two functions:
 
    Greater than:
 
-   ![image](https://user-images.githubusercontent.com/99768688/156058122-6ab1dd15-4985-46ba-ab83-5fb4a2f2fad6.png)
+   ![image](https://user-images.githubusercontent.com/99768688/156061019-a2f313d1-fe58-4fe1-be83-35e6405f51aa.png)
 
    Less than:
 
