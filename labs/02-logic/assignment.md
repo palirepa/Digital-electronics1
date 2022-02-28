@@ -29,7 +29,7 @@
 
    Less than:
 
-   ![image](https://user-images.githubusercontent.com/99768688/156054533-b9c6128a-1c24-4ca2-9e85-f29c84bfc725.png)
+   ![image](https://user-images.githubusercontent.com/99768688/156054729-5c4d8257-3a84-4fa9-8fb4-1ec5dd69b26c.png)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
