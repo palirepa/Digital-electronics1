@@ -6,7 +6,7 @@
 
    Greater than:
 
-   ![image](https://user-images.githubusercontent.com/99768688/156061268-ba6d7f36-d096-4c9a-b799-5871c027d312.png)
+   ![image](https://user-images.githubusercontent.com/99768688/156070152-79733bed-ec43-4e8a-aeee-4de99037f3ba.png)
 
    Less than:
 
