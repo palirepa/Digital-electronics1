@@ -25,7 +25,7 @@
 
    Greater than:
 
-   ![image](https://user-images.githubusercontent.com/99768688/155853084-e6c6a328-9060-46f9-b629-2fae8bdc0fec.png)
+   ![image](https://user-images.githubusercontent.com/99768688/156055600-4de195bf-a721-4de1-a82f-3c7082f22b2e.png)
 
    Less than:
 
