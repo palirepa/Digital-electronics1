@@ -1,0 +1,4 @@
+Running: xsim.dir/mux_3bit_4to1_behav/xsimk.exe -simmode gui -wdb mux_3bit_4to1_behav.wdb -simrunnum 0 -socket 50345
+Design successfully loaded
+Design Loading Memory Usage: 6328 KB (Peak: 6328 KB)
+Design Loading CPU Usage: 15 ms
