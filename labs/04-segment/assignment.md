@@ -111,6 +111,7 @@ Complete the decoder truth table for **common anode** 7-segment display.
         s_hex <= "1111"; wait for 50 ns;
         assert (s_seg = "0111000")
         report "Input combination 1111 FAILED" severity error;
+        
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
