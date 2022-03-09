@@ -48,7 +48,9 @@ Complete the decoder truth table for **common anode** 7-segment display.
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99768688/157425511-42635570-3c9e-4081-af91-c97c7f29610c.png)
+   
+   https://www.edaplayground.com/x/rS8b
 
 ### LED(7:4) indicators
 
