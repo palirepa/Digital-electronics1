@@ -21,6 +21,8 @@ Complete the decoder truth table for **common anode** 7-segment display.
    | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
    | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
+![image](https://user-images.githubusercontent.com/99768688/157418401-9e899331-d4a4-43fa-8518-a525c24f5843.png)
+
 ### Seven-segment display decoder
 
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
