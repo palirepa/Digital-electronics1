@@ -121,6 +121,9 @@ Complete the decoder truth table for **common anode** 7-segment display.
 
    ![image](https://user-images.githubusercontent.com/99768688/157425511-42635570-3c9e-4081-af91-c97c7f29610c.png)
    
+   ![image](https://user-images.githubusercontent.com/99768688/157429963-5b6a6236-f8d5-45ae-8037-f8f3686d6e04.png)
+
+   
    https://www.edaplayground.com/x/rS8b
 
 ### LED(7:4) indicators
