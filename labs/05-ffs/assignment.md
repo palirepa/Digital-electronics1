@@ -1,42 +1,6 @@
 # Lab 5: PAVOL REPA
 
- ![Characteristic equations](images/eq_flip_flops.png)
-   <!--
-   https://editor.codecogs.com/
-   \begin{align*}
-       q_{n+1}^D =&~D \\
-       q_{n+1}^{JK} =& \\
-       q_{n+1}^T =& \\
-   \end{align*}
-   -->
-
-   **D-type FF**
-   | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | rising | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | rising | 0 | 1 |  |  |
-   | rising | 1 |  |  |  |
-   | rising | 1 |  |  |  |
-
-   **JK-type FF**
-   | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-: | :-- |
-   | rising | 0 | 0 | 0 | 0 | Output did not change |
-   | rising | 0 | 0 | 1 | 1 | Output did not change |
-   | rising | 0 |  |  |  |  |
-   | rising | 0 |  |  |  |  |
-   | rising | 1 |  |  |  |  |
-   | rising | 1 |  |  |  |  |
-   | rising | 1 |  |  |  |  |
-   | rising | 1 |  |  |  |  |
-
-   **T-type FF**
-   | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | rising | 0 | 0 | 0 | Output did not change |
-   | rising | 0 | 1 |  |  |
-   | rising | 1 |  |  |  |
-   | rising | 1 |  |  |  |
+ ![image](https://user-images.githubusercontent.com/99768688/158488460-11bdb289-b935-4b3f-ae68-21695c89b4b0.png)
 
 ![image](https://user-images.githubusercontent.com/99768688/158456855-13b1e096-7924-4dab-9774-f5478de1f69a.png)
 
