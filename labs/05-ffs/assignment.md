@@ -38,6 +38,11 @@
    | rising | 1 |  |  |  |
    | rising | 1 |  |  |  |
 
+![image](https://user-images.githubusercontent.com/99768688/158456855-13b1e096-7924-4dab-9774-f5478de1f69a.png)
+
+![image](https://user-images.githubusercontent.com/99768688/158457083-486e72c1-9e75-4c93-8fec-474c9cf454a7.png)
+
+
 ### Flip-flops
 
 1. Listing of VHDL architecture for T-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
