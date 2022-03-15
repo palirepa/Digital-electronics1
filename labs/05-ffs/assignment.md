@@ -33,12 +33,10 @@
    **T-type FF**
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | rising] | 0 | 0 | 0 | Output did not change |
-   | rising] | 0 | 1 |  |  |
-   | rising] | 1 |  |  |  |
-   | rising] | 1 |  |  |  |
-
-<a name="part1"></a>
+   | rising | 0 | 0 | 0 | Output did not change |
+   | rising | 0 | 1 |  |  |
+   | rising | 1 |  |  |  |
+   | rising | 1 |  |  |  |
 
 ### Flip-flops
 
