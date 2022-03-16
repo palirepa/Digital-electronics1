@@ -1,12 +1,5 @@
 # Lab 5: PAVOL REPA
 
- ![image](https://user-images.githubusercontent.com/99768688/158488460-11bdb289-b935-4b3f-ae68-21695c89b4b0.png)
-
-![image](https://user-images.githubusercontent.com/99768688/158456855-13b1e096-7924-4dab-9774-f5478de1f69a.png)
-
-![image](https://user-images.githubusercontent.com/99768688/158457083-486e72c1-9e75-4c93-8fec-474c9cf454a7.png)
-
-
 ### Flip-flops
 
 1. Listing of VHDL architecture for T-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
@@ -42,7 +35,7 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99768688/158577098-9397495b-80f2-46ab-932f-0ae74d6971d9.png)
 
 ### Shift register
 
