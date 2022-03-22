@@ -14,11 +14,11 @@ The Nexys A7 board provides five push buttons for user applications.
 
    ![number of periods](images/periods.png)
    &nbsp;
-   <!--
+   
    https://editor.codecogs.com/
    T_{clk}=\frac{1}{f_{clk}}=
    \textup{number of clk period} = \frac{\textup{time interval}}{T_{clk}}=
-   -->
+   
 
    | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
