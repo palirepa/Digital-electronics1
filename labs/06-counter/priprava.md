@@ -1,35 +1,4 @@
-# Lab 6: Binary counter
-
-<!--
-![Logo](../../logolink_eng.jpg)
-<p align="center">
-  The Study of Modern and Developing Engineering BUT<br>
-  CZ.02.2.69/0.0/0.0/18_056/0013325
-</p>
--->
-
-### Learning objectives
-
-After completing this lab you will be able to:
-
-* Use VHDL generics and synchronous processes
-* Use clock enable signal to drive another logic in the design (with slower clock)
-* Understand binary counters
-
-The purpose of this laboratory exercise is to become familiar with the creation of sequential processes in VHDL, next to implement a clock enable signal to drive another logic with slower clock, and to design a binary counter.
-
-### Table of contents
-
-* [Preparation tasks](#preparation)
-* [Part 1: Synchronize Git and create a new folder](#part1)
-* [Part 2: VHDL code for clock enable](#part2)
-* [Part 3: VHDL code for bidirectional binary counter](#part3)
-* [Part 4: Top level VHDL code](#part4)
-* [Experiments on your own](#experiments)
-* [Lab assignment](#assignment)
-* [References](#references)
-
-<a name="preparation"></a>
+# Lab 6: Pavol Repa priprava
 
 ## Preparation tasks (done before the lab at home)
 
