@@ -2,16 +2,45 @@
 
 ## Preparation tasks (done before the lab at home)
 
-   kde nie sú buttons stalčené tak generuje LOW, tak sa stlačia buttons tak na výstupe sa generuje HIGH
+A common way to control multiple displays is to gradually switch between them. We control (connect to supply voltage) only one of the displays at a time, as can be seen [here](https://engineeringtutorial.com/seven-segment-display-working-principle/).
 
-   ![image](https://user-images.githubusercontent.com/99768688/159550321-69768b3c-90f5-4de7-90a8-4bcbd8fcb30d.png)
+Due to the physiological properties of human vision, it is necessary that the time required to display the whole value is a maximum of 16&nbsp;ms. If we display four digits, then the duration of one of them is 4&nbsp;ms. If we display eight digits, the time is reduced to 2&nbsp;ms, etc.
 
+1. See [schematic](https://github.com/tomas-fryza/Digital-electronics-1/blob/master/docs/nexys-a7-sch.pdf) or [reference manual](https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/reference-manual) of the Nexys A7 board, find out the connection of 7-segment displays, and complete the signal timing to display four-digit value `3.142`.
 
-   | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
-   | :-: | :-: | :-: | :-: |
-   | 2&nbsp;ms | 200 000 | `x"3_0d40"` | `b"0011_0000_1101_0100_0000"` |
-   | 4&nbsp;ms | 400 000 | `x"6_1A80"` | `b"0110_0001_1010_1000_0000"` |
-   | 10&nbsp;ms | 1 000 000 | `x"F_4240"` | `b"1111_0100_0010_0100_0000"` |
-   | 250&nbsp;ms | 25 000 000 | `x"17D_7840"` | `b"0001_0111_1101_0111_1000_0100_0000"` |
-   | 500&nbsp;ms | 50 000 000 | `x"2FA_F080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
-   | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
+  ![https://lastminuteengineers.com/seven-segment-arduino-tutorial/](../04-segment/images/7-Segment-Display-Number-Formation-Segment-Contol.png)
+
+  ![Timing of seven-segment display](images/01.png)
+
+  > The figure above was created in [WaveDrom](https://wavedrom.com/) digital timing diagram online tool. The figure source code is as follows:
+  >
+  ```javascript
+  {
+  signal:
+  [
+    ['Digit position',
+      {name: 'Common anode: AN(3)', wave: 'xx01..01..01'},
+      {name: 'AN(2)', wave: 'xx101..01..0'},
+      {name: 'AN(1)', wave: 'xx1.01..01..'},
+      {name: 'AN(0)', wave: 'xx1..01..01.'},
+    ],
+    ['Seven-segment data',
+      {name: '4-digit value to display', wave: 'xx3333555599', data: ['3','1','4','2','3','1','4','2','3','1']},
+      {name: 'CA', wave: 'xx01.0.1.0.1'},
+      {name: 'Cathod B: CB', wave: 'xx0.........'},
+      {name: 'CC', wave: 'xx0..10..10.'},
+      {name: 'CD', wave: 'xx01.0.1.0.1'},
+      {name: 'CE', wave: 'xx1..01..01.'},
+      {name: 'CF', wave: 'xx1.01..01..'},
+      {name: 'Cathod G: CG', wave: 'xx010..10..1'},
+    ],
+    {name: 'Decimal point: DP', wave: 'xx01..01..01'},
+  ],
+  head:
+  {
+    text: '                    4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms',
+  },
+}
+  ```
+
+<a name="part1"></a>
