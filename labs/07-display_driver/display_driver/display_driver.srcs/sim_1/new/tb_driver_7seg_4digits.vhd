@@ -34,7 +34,7 @@ architecture testbench of tb_driver_7seg_4digits is
     signal s_data1 : std_logic_vector(3 downto 0);
     signal s_data2 : std_logic_vector(3 downto 0);
     signal s_data3 : std_logic_vector(3 downto 0);
-    signal s_dpin  : std_logic;
+    signal s_dpin  : std_logic_vector(3 downto 0);
     signal s_dpout : std_logic;
     signal s_seg   : std_logic_vector(6 downto 0);
     signal s_dig   : std_logic_vector(3 downto 0);
@@ -103,6 +103,6 @@ begin
         
         report "Stimulus process finished" severity note;
         wait;
-    end process p_reset_gen;
+    end process p_stimulus;
 
 end architecture testbench;
