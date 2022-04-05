@@ -1,4 +1,4 @@
-# Lab 6: Pavol Repa priprava
+# Lab 8: Pavol Repa priprava
 
 ## Preparation tasks (done before the lab at home)
 
