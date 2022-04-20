@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
-* Member 3 (responsible for xxx)
-* ...
+* Jakub Brandejs (responsible for louzak)
+* Jakub Ďuráč (responsible for louzak #2)
+* Adam Popelka (responsible for xxx)
+* Pavol Repa (responsible for xxx)
 
 ### Table of contents
 
