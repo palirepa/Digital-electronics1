@@ -1,9 +1,9 @@
-# UART
+# UART transmitter with adjustable UART frame
 
 ### Team members
 
-* Jakub Brandejs (responsible for louzak)
-* Jakub Ďuráč (responsible for louzak #2)
+* Jakub Brandejs (responsible for xxx)
+* Jakub Ďuráč (responsible for xxx)
 * Adam Popelka (responsible for xxx)
 * Pavol Repa (responsible for xxx)
 
