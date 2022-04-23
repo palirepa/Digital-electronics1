@@ -1,4 +1,4 @@
-# UART transmitter with adjustable UART frame
+# UART interface
 
 ### Team members
 
