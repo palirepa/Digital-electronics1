@@ -20,7 +20,7 @@
 
 ## Project objectives
 
-Write your text here.
+Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd.
 
 <a name="hardware"></a>
 
