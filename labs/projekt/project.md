@@ -36,14 +36,22 @@ K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná
 
 ## VHDL modules description and simulations
 
-V projektu jsou z velké části využity ukázkové moduly z hodin počítačového cvičení.
 
-# 7-seg display driver
+
+### top
 Slouží k zobrazování znaků na displeji. Jako vstup mu slouží 32bit pole (data_i), které získá od shift_array. K aktualizaci hodnot jednotlivých displejů dochází postupně (7-0) a jejich výběr probíhá pomocí 3bit čítače, kdy každý displej má přiřazeno vlastní číslo.
 
-# shift_array
+### UART_rx
+Vysielač zajisťuje posielanie vopred nastavených dát smerom k prijímaču.
+
+### UART_tx
+Prijímač príjme prijaté dáta, ktoré prišli z vysielača.
+
+### button_debounce
 Shift array zajišťuje "běhání" zobrazované zprávy. Posun je řízen druhou instancí hodin, která je pomalejší. Při resetu si načte zprávu, kterou chceme zobrazit, do 64bit pole a poté při každém s_en2 signálu posune obsah o 4 bity.
 
+### top_tb
+Shift array zajišťuje "běhání" zobrazované zprávy. Posun je řízen druhou instancí hodin, která je pomalejší. Při resetu si načte zprávu, kterou chceme zobrazit, do 64bit pole a poté při každém s_en2 signálu posune obsah o 4 bity.
 <a name="top"></a>
 
 ## TOP module description and simulations
@@ -73,4 +81,5 @@ Write your text here
 11. https://jit.sirim.my/Volume/Volume%2011%20No.2%202002/design_of_a_mini-uart_using_vhdl.pdf
 12. https://www.researchgate.net/publication/254034888_VHDL_implementation_of_UART_with_status_register
 13. https://academic.csuohio.edu/chu_p/rtl/fpga_vhdl_book/fpga_vhdl_sample_chapter.pdf
-14. https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
+-----------------------------------
+https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
