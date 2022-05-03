@@ -68,6 +68,10 @@ Write your text here
 
 ## References
 
+-----------------------------------
+https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
+-----------------------------------
+
 1. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
 2. https://www.pantechsolutions.net/vhdl-code-for-uart-serial-communication
 3. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
@@ -81,5 +85,3 @@ Write your text here
 11. https://jit.sirim.my/Volume/Volume%2011%20No.2%202002/design_of_a_mini-uart_using_vhdl.pdf
 12. https://www.researchgate.net/publication/254034888_VHDL_implementation_of_UART_with_status_register
 13. https://academic.csuohio.edu/chu_p/rtl/fpga_vhdl_book/fpga_vhdl_sample_chapter.pdf
------------------------------------
-https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
