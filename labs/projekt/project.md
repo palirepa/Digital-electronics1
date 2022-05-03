@@ -20,7 +20,11 @@
 
 ## Project objectives
 
-Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd.
+Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd. 
+
+UART vysielač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.
+
+UART vysielač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústava.
 
 <a name="hardware"></a>
 
