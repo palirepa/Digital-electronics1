@@ -36,7 +36,13 @@ K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná
 
 ## VHDL modules description and simulations
 
-Write your text here.
+V projektu jsou z velké části využity ukázkové moduly z hodin počítačového cvičení.
+
+#7-seg display driver
+Slouží k zobrazování znaků na displeji. Jako vstup mu slouží 32bit pole (data_i), které získá od shift_array. K aktualizaci hodnot jednotlivých displejů dochází postupně (7-0) a jejich výběr probíhá pomocí 3bit čítače, kdy každý displej má přiřazeno vlastní číslo.
+
+#shift_array
+Shift array zajišťuje "běhání" zobrazované zprávy. Posun je řízen druhou instancí hodin, která je pomalejší. Při resetu si načte zprávu, kterou chceme zobrazit, do 64bit pole a poté při každém s_en2 signálu posune obsah o 4 bity.
 
 <a name="top"></a>
 
