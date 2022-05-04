@@ -1,8 +1,0 @@
-Vivado Simulator 2020.1
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/APPZ/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto dffbe52e0f55487ea8f32e771979db1f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_uart_controller_behav xil_defaultlib.tb_uart_controller -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-4940] 'uart_t' remains a black box since it has no binding entity [D:/Documents/xrepap00/digital-electronics-1/labs/projekt/uart.srcs/sources_1/new/uart.vhd:49]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

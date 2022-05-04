@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue May  3 23:13:53 2022
+# Process ID: 21580
+# Current directory: D:/Dokumenty/Vivado/project/project.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: D:/Dokumenty/Vivado/project/project.runs/impl_1/top.vdi
+# Journal file: D:/Dokumenty/Vivado/project/project.runs/impl_1\vivado.jou
+# Running On: DESKTOP-S0KVPTU, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 12, Host memory: 17088 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: link_design -top top -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+WARNING: [Device 21-9] Clock region file  is not available
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1370.328 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+SW_IBUF[0]_inst/INBUF_INST
+SW[0]
+SW_IBUF[0]_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:12]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+SW_IBUF[1]_inst/INBUF_INST
+SW[1]
+SW_IBUF[1]_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:13]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M13' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R15' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:15]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+SW_IBUF[4]_inst/INBUF_INST
+SW[4]
+SW_IBUF[4]_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:16]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T18' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:17]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U18' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:18]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not find a valid bel for the shape with the following elements: 
+SW_IBUF[7]_inst/INBUF_INST
+SW[7]
+SW_IBUF[7]_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:19]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+LED_OBUF[0]_inst
+LED[0]
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:30]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+LED_OBUF[1]_inst
+LED[1]
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:31]
+CRITICAL WARNING: [Common 17-69] Command failed: 'J13' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:32]
+CRITICAL WARNING: [Common 17-69] Command failed: 'N14' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:33]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+LED_OBUF[4]_inst
+LED[4]
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:34]
+CRITICAL WARNING: [Common 17-69] Command failed: 'V17' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U17' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:36]
+CRITICAL WARNING: [Common 17-69] Command failed: 'U16' is not a valid site or package pin name. [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:37]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+BTNC_IBUF_inst/INBUF_INST
+BTNC
+BTNC_IBUF_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:75]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Site location (PS8_X0Y0) is not valid for the shape with the following elements: 
+reset_IBUF_inst/INBUF_INST
+reset
+reset_IBUF_inst/IBUFCTRL_INST
+ [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc:76]
+Finished Parsing XDC File [D:/Dokumenty/Vivado/project/project.srcs/constrs_1/new/nexys-a7-50t.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Device 21-2168] Failed to load clock programmable delays in NTD flow
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1391.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 12 instances
+
+7 Infos, 1 Warnings, 19 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1391.059 ; gain = 124.875
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1416.023 ; gain = 24.965
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: 15c380df8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1416.023 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 1 Warnings, 19 Critical Warnings and 1 Errors encountered.
+opt_design failed
+ERROR: [Common 17-577] Internal error: Cannot run timing on a non-timing device
+INFO: [Common 17-206] Exiting Vivado at Tue May  3 23:14:05 2022...
