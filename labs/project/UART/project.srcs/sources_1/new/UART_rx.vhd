@@ -3,7 +3,6 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-
 entity UART_rx is
 
     generic(
@@ -30,14 +29,6 @@ architecture Behavioral of UART_rx is
 
 begin
 
-
--- The baud_rate_x16_clk_generator process generates an oversampled clock.
--- The baud_rate_x16_clk signal is 16 times faster than the baud rate clock.
--- Oversampling is needed to put the capture point at the middle of duration of
--- the receiving bit.
--- The BAUD_X16_CLK_TICKS constant reflects the ratio between the master clk
--- and the x16 baud rate.
-
     baud_rate_x16_clk_generator: process(clk)
     variable baud_x16_count: integer range 0 to (BAUD_X16_CLK_TICKS - 1) := (BAUD_X16_CLK_TICKS - 1);
     begin
@@ -57,9 +48,6 @@ begin
         end if;
     end process baud_rate_x16_clk_generator;
 
-
--- The UART_rx_FSM process represents a Finite State Machine which has
--- four states (IDLE, START, DATA, STOP). See inline comments for more details.
 
     UART_rx_FSM: process(clk)
         variable bit_duration_count : integer range 0 to 15 := 0;
