@@ -20,38 +20,41 @@
 
 ## Project objectives
 
-Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd. 
-
-UART vysielač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.
-
-UART vysielač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústava.
+Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd. UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
 
 <a name="hardware"></a>
 
 ## Hardware description
 
-K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná platforma na vývoj digitálnych obvodov. Vďaka veľkému, vysokokapacitnému FPGA, veľkorysým externým pamäťám a kolekcii USB, Ethernet a ďalších portov môže Nexys A7 hostiť dizajny od úvodných kombinovaných obvodov až po výkonné vstavané procesory. Niekoľko vstavaných periférií, vrátane akcelerometra, teplotného senzora, digitálneho mikrofónu MEM, zosilňovača reproduktorov a niekoľkých I/O zariadení umožňuje použitie Nexys A7 pre širokú škálu dizajnov bez potreby ďalších komponentov.
+K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná platforma na vývoj digitálnych obvodov. Vďaka veľkému, vysokokapacitnému FPGA, veľkorysým externým pamäťám a kolekcii USB, Ethernet a ďalších portov môže Nexys A7-50T hostiť dizajny od úvodných kombinovaných obvodov až po výkonné vstavané procesory. Niekoľko vstavaných periférií, vrátane akcelerometra, teplotného senzora, digitálneho mikrofónu MEM, zosilňovača reproduktorov a niekoľkých I/O zariadení umožňuje použitie Nexys A7-50T pre širokú škálu dizajnov bez potreby ďalších komponentov.
+
+Doska Nexys A7-50T nám umožňuje použiť 7-segmetovku, vďaka ktorej môžeme zobraziť čísla a znaky zo hexadicimálnej sústavy.
+
+
+//UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
+//UART prijímač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.
 
 <a name="modules"></a>
 
 ## VHDL modules description and simulations
 
+### top.vhd
+Hlavný súbor, ktorý spája program s vonkajším svetom.
 
 
-### top
-Slouží k zobrazování znaků na displeji. Jako vstup mu slouží 32bit pole (data_i), které získá od shift_array. K aktualizaci hodnot jednotlivých displejů dochází postupně (7-0) a jejich výběr probíhá pomocí 3bit čítače, kdy každý displej má přiřazeno vlastní číslo.
+### UART_tx.vhd
+Obsahuje všetku logiku vysielača. Je to vysielací modul, vyšle dáta, ktoré posiela smerom k vysielaču.
 
-### UART_rx
-Vysielač zajisťuje posielanie vopred nastavených dát smerom k prijímaču.
+### UART_rx.vhd
+Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spracuje.
 
-### UART_tx
-Prijímač príjme prijaté dáta, ktoré prišli z vysielača.
+### button_debounce.vhd
+//Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie. 
+Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
-### button_debounce
-Shift array zajišťuje "běhání" zobrazované zprávy. Posun je řízen druhou instancí hodin, která je pomalejší. Při resetu si načte zprávu, kterou chceme zobrazit, do 64bit pole a poté při každém s_en2 signálu posune obsah o 4 bity.
+### top_tb.vhd
+Top_tb zabezpečuje chod celého programu.
 
-### top_tb
-Shift array zajišťuje "běhání" zobrazované zprávy. Posun je řízen druhou instancí hodin, která je pomalejší. Při resetu si načte zprávu, kterou chceme zobrazit, do 64bit pole a poté při každém s_en2 signálu posune obsah o 4 bity.
 <a name="top"></a>
 
 ## TOP module description and simulations
@@ -70,7 +73,6 @@ Write your text here
 
 -----------------------------------
 https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
------------------------------------
 
 1. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
 2. https://www.pantechsolutions.net/vhdl-code-for-uart-serial-communication
