@@ -49,7 +49,7 @@ Obsahuje všetku logiku vysielača. Je to vysielací modul, vyšle dáta, ktoré
 Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spracuje.
 
 ### button_debounce.vhd
-//Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie. 
+(Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie.) 
 Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
 ### top_tb.vhd
