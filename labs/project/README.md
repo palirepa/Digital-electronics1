@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Jakub Brandejs (debug, video editor)
-* Jakub Ďuráč (debug, simulation)
-* Adam Popelka (debug, video editor, research)
-* Pavol Repa (debug, github, research)
+* Jakub Brandejs (debug, video editor, code editor)
+* Jakub Ďuráč (debug, simulation, code editor)
+* Adam Popelka (debug, video editor, research, code editor)
+* Pavol Repa (debug, github, research, code editor)
 
 ### Table of contents
 
