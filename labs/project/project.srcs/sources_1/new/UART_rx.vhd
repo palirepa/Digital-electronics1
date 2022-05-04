@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 entity UART_rx is
 
     generic(
-        BAUD_X16_CLK_TICKS: integer := 651); -- (clk / baud_rate) / 16 => (100 000 000 / 115 200) / 16 = 54.25
+        BAUD_X16_CLK_TICKS: integer := 651); -- (clk / baud_rate) / 16 => (100 000 000 / 9 600) / 16 = 651
 
     port(
         clk            : in  std_logic;
