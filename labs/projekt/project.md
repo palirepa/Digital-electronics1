@@ -36,6 +36,8 @@ Nexys A7 obsahuje USB-UART most, ktorý umožňuje používať PC aplikácie na 
 
 ![image](https://user-images.githubusercontent.com/99768688/166742789-a4431692-7401-490b-a010-73c9211c31da.png)
 
+<img src="https://user-images.githubusercontent.com/99768688/166742789-a4431692-7401-490b-a010-73c9211c31da.png" width=50% height=50%>
+
 
 <a name="modules"></a>
 
@@ -59,8 +61,6 @@ Top_tb zabezpečuje chod celého programu.
 
 #### simulácia
 ![image](https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png)
-
-<img src="https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png" width=50% height=50%>
 
 <a name="top"></a>
 
