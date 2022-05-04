@@ -4,7 +4,7 @@
 
 * Jakub Brandejs (level4 pro master++ video editor, debug)
 * Jakub Ďuráč (simulácia, debug)
-* Adam Popelka (implementácia kódu do vivada)
+* Adam Popelka (implementácia kódu)
 * Pavol Repa (debug, github)
 
 ### Table of contents
