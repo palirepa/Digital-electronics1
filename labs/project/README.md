@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Jakub Brandejs (level4 pro master++ video editor, debug)
-* Jakub Ďuráč (simulácia, debug)
-* Adam Popelka (implementácia kódu)
-* Pavol Repa (debug, github)
+* Jakub Brandejs (level4 pro master++ hardcore video editor platinum, debug)
+* Jakub Ďuráč (simulácia feat Neymar, debug)
+* Adam Popelka (error warming master pro global_offensive)
+* Pavol Repa (debug, guru githubu)
 
 ### Table of contents
 
@@ -55,11 +55,15 @@ Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spr
 ### button_debounce.vhd 
 Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
+### segment.vhd 
+Tu sme si napisali kod na zobrazenie segmentovky.
+
 ### top_tb.vhd
 Top_tb zabezpečuje chod celého programu.
 
-#### simulácia
-![image](https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png)
+### Simulácia
+
+![image](https://user-images.githubusercontent.com/99768688/166811542-d5cb8ae8-e453-49aa-97f4-ff2c6640c485.png)
 
 <a name="top"></a>
 
