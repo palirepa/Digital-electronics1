@@ -4,7 +4,7 @@
 
 * Jakub Brandejs (level4 pro master++ hardcore video editor platinum, debug)
 * Jakub Ďuráč (simulácia feat Neymar, debug)
-* Adam Popelka (error warming master pro global_offensive)
+* Adam Popelka (error warming master pro global offensive)
 * Pavol Repa (debug, guru githubu)
 
 ### Table of contents
