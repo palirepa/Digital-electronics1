@@ -31,8 +31,11 @@ K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná
 Doska Nexys A7-50T nám umožňuje použiť 7-segmetovku, vďaka ktorej môžeme zobraziť čísla a znaky zo hexadicimálnej sústavy.
 
 
-(UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
-UART prijímač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.)
+//UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
+//UART prijímač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.
+
+![image](https://user-images.githubusercontent.com/99768688/166651231-239da1c5-a3ce-4d95-865f-c8242e24acb8.png)
+
 
 <a name="modules"></a>
 
@@ -49,7 +52,7 @@ Obsahuje všetku logiku vysielača. Je to vysielací modul, vyšle dáta, ktoré
 Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spracuje.
 
 ### button_debounce.vhd
-(Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie.)
+//Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie. 
 Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
 ### top_tb.vhd
