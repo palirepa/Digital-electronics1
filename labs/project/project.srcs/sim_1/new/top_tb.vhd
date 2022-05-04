@@ -14,10 +14,10 @@ architecture testbench of top_tb is
    component top
        port(
              CLK100MHZ      : in std_logic;
-             BTNC      : in std_logic;
+             BTNC           : in std_logic;
              reset          : in std_logic;
              SW             : in std_logic_vector (7 downto 0);
-             LED       : out std_logic_vector (7 downto 0);
+             LED            : out std_logic_vector (7 downto 0);
 
              rx             : in std_logic;
              tx             : out std_logic
@@ -36,10 +36,6 @@ architecture testbench of top_tb is
 
     signal tx_serial_out  : std_logic := '1';
     signal rx_serial_in   : std_logic := '1';
-    
-    signal s_hex  : std_logic_vector(4 - 1 downto 0);
-    signal s_seg  : std_logic_vector(7 - 1 downto 0);
-
 
     constant clock_cycle : time := 10 ns;    -- 1/clk (1 / 100 000 000)
 
@@ -49,10 +45,10 @@ begin
     port map(
             CLK100MHZ => clk,
             reset     => reset,
-            BTNC => tx_start,
+            BTNC      => tx_start,
 
-            SW   => tx_data_in,
-            LED  => rx_data_out,
+            SW        => tx_data_in,
+            LED       => rx_data_out,
 
             tx        => tx_serial_out,
             rx        => rx_serial_in
@@ -75,7 +71,7 @@ begin
 
     signals_gen: process
     begin
-        tx_data_in <= "01000001";
+        tx_data_in <= "01000001"; -- A
         tx_start <= '0';
 
         wait for 25 ns;
@@ -84,7 +80,7 @@ begin
             tx_start <= '0';
         wait for 205 ns;
 
-        tx_data_in <= "11111111";
+        tx_data_in <= "00111001";  -- 9
 
         wait for 28 ns;
             tx_start <= '1';
