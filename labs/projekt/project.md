@@ -20,7 +20,6 @@
 
 ## Project objectives
 
-SK:
 Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd. UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
 
 <a name="hardware"></a>
@@ -60,6 +59,8 @@ Top_tb zabezpečuje chod celého programu.
 
 #### simulácia
 ![image](https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png)
+
+<img src="https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png" width=50% height=50%>
 
 <a name="top"></a>
 
