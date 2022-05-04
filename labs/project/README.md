@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Jakub Brandejs (level4 pro master++ video editor, debug)
-* Jakub Ďuráč (simulácia, debug)
-* Adam Popelka (implementácia kódu)
-* Pavol Repa (debug, github)
+* Jakub Brandejs (level4 pro master++ hardcore video editor platinum, debug)
+* Jakub Ďuráč (simulácia feat Neymar, debug)
+* Adam Popelka (error warming master pro global_offensive)
+* Pavol Repa (debug, guru githubu)
 
 ### Table of contents
 
@@ -55,11 +55,15 @@ Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spr
 ### button_debounce.vhd 
 Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
+### segment.vhd 
+Tu sme si napisali kod na zobrazenie segmentovky.
+
 ### top_tb.vhd
 Top_tb zabezpečuje chod celého programu.
 
-#### simulácia
-![image](https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png)
+### Simulácia
+
+![image](https://user-images.githubusercontent.com/99768688/166811542-d5cb8ae8-e453-49aa-97f4-ff2c6640c485.png)
 
 <a name="top"></a>
 
@@ -77,19 +81,19 @@ Write your text here
 
 ## References
 
------------------------------------
-https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
-
-1. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
-2. https://www.pantechsolutions.net/vhdl-code-for-uart-serial-communication
+1. https://github.com/tomas-fryza/digital-electronics-2/tree/master/labs/07-uart
+2. https://www.youtube.com/watch?v=dQw4w9WgXcQ
 3. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
-4. https://www.instructables.com/Design-of-UART-in-VHDL/
-5. https://www.nandland.com/vhdl/modules/module-uart-serial-port-rs232.html
-6. https://forum.digikey.com/t/uart-vhdl/12670
-7. https://github.com/jakubcabal/uart-for-fpga
-8. http://esd.cs.ucr.edu/labs/uart/uart.html
-9. http://ece-research.unm.edu/jimp/vhdl_fpgas/slides/UART.pdf
-10. https://ieeexplore.ieee.org/document/5873448
-11. https://jit.sirim.my/Volume/Volume%2011%20No.2%202002/design_of_a_mini-uart_using_vhdl.pdf
-12. https://www.researchgate.net/publication/254034888_VHDL_implementation_of_UART_with_status_register
-13. https://academic.csuohio.edu/chu_p/rtl/fpga_vhdl_book/fpga_vhdl_sample_chapter.pdf
+4. https://www.pantechsolutions.net/vhdl-code-for-uart-serial-communication
+5. https://www.mikrocontroller.net/attachment/9036/ALSE_UART_us.pdf
+6. https://www.instructables.com/Design-of-UART-in-VHDL/
+7. https://www.nandland.com/vhdl/modules/module-uart-serial-port-rs232.html
+8. https://projects.digilentinc.com/alexey-sudbin/uart-interface-in-vhdl-for-basys3-board-eef170
+9. https://forum.digikey.com/t/uart-vhdl/12670
+10. https://github.com/jakubcabal/uart-for-fpga
+11. http://esd.cs.ucr.edu/labs/uart/uart.html
+12. http://ece-research.unm.edu/jimp/vhdl_fpgas/slides/UART.pdf
+13. https://ieeexplore.ieee.org/document/5873448
+14. https://jit.sirim.my/Volume/Volume%2011%20No.2%202002/design_of_a_mini-uart_using_vhdl.pdf
+15. https://www.researchgate.net/publication/254034888_VHDL_implementation_of_UART_with_status_register
+16. https://academic.csuohio.edu/chu_p/rtl/fpga_vhdl_book/fpga_vhdl_sample_chapter.pdf
