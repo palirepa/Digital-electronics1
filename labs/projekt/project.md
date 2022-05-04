@@ -2,7 +2,7 @@
 
 ### Team members
 
-* Jakub Brandejs (video editor, debug)
+* Jakub Brandejs (level4 pro master++ video editor, debug)
 * Jakub Ďuráč (simulácia, debug)
 * Adam Popelka (implementácia kódu do vivada)
 * Pavol Repa (debug, github)
@@ -33,7 +33,7 @@ Cílem projektu je vytvoření UART rozhraní, tedy UART vysílač a přijímač
 K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná platforma na vývoj digitálnych obvodov. Vďaka veľkému, vysokokapacitnému FPGA, veľkorysým externým pamäťám a kolekcii USB, Ethernet a ďalších portov môže Nexys A7-50T hostiť dizajny od úvodných kombinovaných obvodov až po výkonné vstavané procesory. Obsahuje niekoľko vstavaných periférií, vrátane akcelerometra, teplotného senzora, digitálneho mikrofónu MEM, zosilňovača reproduktorov a niekoľkých I/O zariadení. 
 
 Doska Nexys A7-50T nám umožňuje použiť 7-segmetovku, vďaka ktorej môžeme zobraziť čísla a znaky zo hexadicimálnej sústavy.
-Program Tera Term sme použili ako konzolový pristup k ASCII znakom. 
+Program Tera Term sme použili ako konzolový prístup k ASCII znakom. 
 Nexys A7 obsahuje USB-UART most, ktorý umožňuje používať PC aplikácie na komunikáciu s doskou pomocou štandardných príkazov Windows COM portu.
 
 ![image](https://user-images.githubusercontent.com/99768688/166651231-239da1c5-a3ce-4d95-865f-c8242e24acb8.png)
@@ -52,12 +52,14 @@ Obsahuje všetku logiku vysielača. Je to vysielací modul, vyšle dáta, ktoré
 ### UART_rx.vhd
 Obsahuje všetku logiku prijímača. Je to prijímací modul, prijaté dáta spracuje.
 
-### button_debounce.vhd
-(Spája vysielacie tlačidlo so zvyškom projektu a zabraňuje viacnásobnému stlačeniu na jedno stlačenie.) 
+### button_debounce.vhd 
 Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
 
 ### top_tb.vhd
 Top_tb zabezpečuje chod celého programu.
+
+#### simulácia
+![image](https://user-images.githubusercontent.com/99768688/166741986-30dcad33-bd9e-4455-81f4-d9139bd39941.png)
 
 <a name="top"></a>
 
