@@ -26,16 +26,13 @@ Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač.
 
 ## Hardware description
 
-K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná platforma na vývoj digitálnych obvodov. Vďaka veľkému, vysokokapacitnému FPGA, veľkorysým externým pamäťám a kolekcii USB, Ethernet a ďalších portov môže Nexys A7-50T hostiť dizajny od úvodných kombinovaných obvodov až po výkonné vstavané procesory. Niekoľko vstavaných periférií, vrátane akcelerometra, teplotného senzora, digitálneho mikrofónu MEM, zosilňovača reproduktorov a niekoľkých I/O zariadení umožňuje použitie Nexys A7-50T pre širokú škálu dizajnov bez potreby ďalších komponentov.
+K realizácií sme použili dosku Nexys A7-50T. Doska Nexys A7-50T je kompletná platforma na vývoj digitálnych obvodov. Vďaka veľkému, vysokokapacitnému FPGA, veľkorysým externým pamäťám a kolekcii USB, Ethernet a ďalších portov môže Nexys A7-50T hostiť dizajny od úvodných kombinovaných obvodov až po výkonné vstavané procesory. Obsahuje niekoľko vstavaných periférií, vrátane akcelerometra, teplotného senzora, digitálneho mikrofónu MEM, zosilňovača reproduktorov a niekoľkých I/O zariadení. 
 
 Doska Nexys A7-50T nám umožňuje použiť 7-segmetovku, vďaka ktorej môžeme zobraziť čísla a znaky zo hexadicimálnej sústavy.
-
-
-//UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
-//UART prijímač komunikuje s UART rozhraním pomocou AsCII znakov a s doskou Nexys... pomocou 7-segmentovky, na ktorej sa zobrazuje hexadicimálna sustava.
+Program Tera Term sme použili ako konzolový pristup k ASCII znakom. 
+Nexys A7 obsahuje USB-UART most, ktorý umožňuje používať PC aplikácie na komunikáciu s doskou pomocou štandardných príkazov Windows COM portu.
 
 ![image](https://user-images.githubusercontent.com/99768688/166651231-239da1c5-a3ce-4d95-865f-c8242e24acb8.png)
-
 
 <a name="modules"></a>
 
