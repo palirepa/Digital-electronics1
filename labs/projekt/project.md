@@ -23,9 +23,6 @@
 SK:
 Cieľom projektu je vytvorenie UART rozhrania, teda UART vysielač a prijímač. Štruktúra UART rozhrania sme si zvolili 8N1 a prenosovú rýchlosť na 9600 Bd. UART prijímač plní funkciu konsole a 7-segmentovky. V konsole sa zobrazujú ASCII znaky a v 7-segmentovke zobrazuje hexadicimálna sústavu.
 
-CZ:
-Cílem projektu je vytvoření UART rozhraní, tedy UART vysílač a přijímač. Struktura UART rozhraní jsme si zvolili 8N1 a přenosovou rychlost na 9600 Bd. UART přijímač plní funkci konsole a 7-segmentovky. V konsole se zobrazují ASCII znaky a v 7-segmentovce zobrazuje hexadicimální soustavu.
-
 <a name="hardware"></a>
 
 ## Hardware description
@@ -37,6 +34,9 @@ Program Tera Term sme použili ako konzolový prístup k ASCII znakom.
 Nexys A7 obsahuje USB-UART most, ktorý umožňuje používať PC aplikácie na komunikáciu s doskou pomocou štandardných príkazov Windows COM portu.
 
 ![image](https://user-images.githubusercontent.com/99768688/166651231-239da1c5-a3ce-4d95-865f-c8242e24acb8.png)
+
+![image](https://user-images.githubusercontent.com/99768688/166742789-a4431692-7401-490b-a010-73c9211c31da.png)
+
 
 <a name="modules"></a>
 
