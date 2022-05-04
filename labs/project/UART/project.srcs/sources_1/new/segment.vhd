@@ -1,14 +1,3 @@
-------------------------------------------------------------
---
--- Template for 7-segment display decoder.
--- Nexys A7-50T, Vivado v2020.1, EDA Playground
---
--- Copyright (c) 2018-Present Tomas Fryza
--- Dept. of Radio Electronics, Brno Univ. of Technology, Czechia
--- This work is licensed under the terms of the MIT license.
---
-------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
