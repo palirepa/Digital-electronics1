@@ -55,12 +55,14 @@ Obsahuje všetku logiku prijímača. Je to prijímací modul, spracováva prijat
 [UART_rx.vhd](https://github.com/palirepa/digital-electronics-1/blob/main/labs/project/UART/project.srcs/sources_1/new/UART_rx.vhd)
 
 ### button_debounce.vhd 
-Aby sme mohli poslať bity z dosky Nexys A7-50T do konzole, museli sme si vytvoriť prídavný súbor, ktorým sme schopný posielať bity do konzole.
+Button_debounce, ktorý nám ošetruje nechcené zákmity pri stlačení tlačítka. 
 [button_debounce.vhd](https://github.com/palirepa/digital-electronics-1/blob/main/labs/project/UART/project.srcs/sources_1/new/button_debounce.vhd)
 
 ### segment.vhd 
-Tu sme si napisali kod na zobrazenie segmentovky.
+7-segmentovka zobrazuje binárne kombinácie zo switchov.
 [segment.vhd](https://github.com/palirepa/digital-electronics-1/edit/main/labs/project/UART/project.srcs/sources_1/new/segment.vhd)
+
+![image](https://user-images.githubusercontent.com/99768688/166826745-1277bca3-377e-4fd7-a799-0e62c7fce0c5.png)
 
 ### top_tb.vhd
 Top_tb zabezpečuje chod celého programu.
