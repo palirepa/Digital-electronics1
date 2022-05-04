@@ -2,8 +2,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-
-
 entity UART_tx is
 
     generic(
@@ -36,12 +34,6 @@ architecture Behavioral of UART_tx is
 
 begin
 
-
--- The baud_rate_clk_generator process generates the UART baud rate clock by
--- setting the baud_rate_clk signal when the counter counts BAUD_CLK_TICKS
--- ticks of the master clk. The BAUD_CLK_TICKS constant is specified in
--- the package and reflects the ratio between the master clk and the baud rate.
-
     baud_rate_clk_generator: process(clk)
     variable baud_count: integer range 0 to (BAUD_CLK_TICKS - 1) := (BAUD_CLK_TICKS - 1);
     begin
@@ -61,16 +53,6 @@ begin
         end if;
     end process baud_rate_clk_generator;
 
-
--- The tx_start_detector process works on the master clk frequency and catches
--- short (one clk cycle long) impulses in the tx_start signal and keeps it for
--- the UART_tx_FSM. tx_start_detector is needed because the UART_tx_FSM works on
--- the baud rate frequency, but the button_debounce module generates one master clk
--- cycle long impulse per one button push. start_detected keeps the information that
--- such event has occurred.
--- The second purpose of tx_start_detector is to secure the transmitting data.
--- stored_data keeps the transmitting data saved during the transmission.
-
     tx_start_detector: process(clk)
     begin
         if rising_edge(clk) then
@@ -85,13 +67,6 @@ begin
         end if;
     end process tx_start_detector;
 
-
--- The data_index_counter process is a simple counter from 0 to 7 working on the baud
--- rate frequency. It is used to perform transformation between the parallel
--- data (stored_data) and the serial output (tx_data_out).
--- The data_index signal is used in UART_tx_FSM to go over the stored_data vector
--- and send the bits one by one.
-
     data_index_counter: process(clk)
     begin
         if rising_edge(clk) then
@@ -102,10 +77,6 @@ begin
             end if;
         end if;
     end process data_index_counter;
-
-
--- The UART_FSM_tx process represents a Finite State Machine which has
--- four states (IDLE, START, DATA, STOP). See inline comments for more details.
 
     UART_tx_FSM: process(clk)
     begin
